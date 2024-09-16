@@ -1,0 +1,6 @@
+singelton :
+
+Adalah salah satu pola desai yang populer di dunia. dinama kita hanya bole menginstansiasi sebuah kelas hanya 1 object.
+singelton juga menyediakan satu cara agar kita bisa mengakses object tersebut menjadi lebih mudah.
+biasa digunakan pada kelas yang menyimpan resource yang digunakan bersama, seperti konfigurasi database, file, dll.
+kita dapat menggunakan kkelas singelton dengan menggunakan kata kunci static.

@@ -1,0 +1,20 @@
+
+// include
+//adalah fungsi yang sama dengan require, namun yang membedakan adalah ketika file yang di includekan tidak ditemukan, file yang di includekan akan ditangani secara fatal      
+//include biasanya unutk memanggil file untuk html
+
+//include 'class/Student.php';
+//include 'class/Teacher.php';
+
+//fungsi include_once
+//berfungsi sama seperti include, namun jika file yang di includekan tidak ditemukan, file yang di includekan tidak akan ditangani secara fatal
+
+
+
+//require adalah fungsi yang sama dengan include, namun yang membedakan adalah ketika file yang di includekan tidak ditemukan, file yang di includekan akan ditangani secara fatal
+
+//require 'class/Student.php';
+//require 'class/Teacher.php';
+
+//require_once
+//berfungsi sama seperti require, namun jika file yang di includekan tidak ditemukan, file yang di includekan tidak akan ditangani secara fatal

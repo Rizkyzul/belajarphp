@@ -1,0 +1,27 @@
+// berasal dari bahsa yunani yang berarti memiliki banyak bentuk.
+// berarti poly ini kemampuan untuk menggunakan object dari kelas yang berbeda
+// walau menggunakan kelas yang berbeda. namun masih perlu mengikuti aturan inheritance.
+// kita hanya bisa menggunakan kelas yang memrupakan keturunan dari kelas yang ditunjuk.
+// misal pria menjadi ayah,pekerja,suami dalam waktu yang sama namun menunjukan tingkah laku yang berbeda tergantung perannya.
+
+ 
+
+// // misal :
+// // teacher -> (mathTeacher)/(CodingTeacher)
+// // function showTeacher(Teacher $teacher){
+// //     $teacher->information();
+// // }
+// // showTeacher(new MathTeacher('anton','2b'));
+
+
+
+
+/** TYPE CHECK */
+
+//untuk memeriksa apakah object dibuat dari kelas tertentu, kita menggunakan operator instanceof
+//instanceof adalah operator yang digunakan untuk memeriksa apakah object dibuat dari kelas tertentu
+//instanceof mengetahui apakah object dibuat dari kelas tertentu
+//mengembalikan nilai false jika object bukan dari kelas tertentu
+
+
+

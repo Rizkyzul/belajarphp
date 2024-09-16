@@ -1,0 +1,54 @@
+
+ body {
+     background-color: #6EC4C0;
+    
+ } 
+
+.mhs {
+    text-align: center;
+    margin-bottom: 15px;
+} 
+
+ .table {
+    margin:auto;
+    background-color: #024959;
+    color: #F2EEED;
+    margin-top: 40px;
+ }
+
+ .trOne {
+     background-color: #038C8C;
+     color: #F2EEED;
+ }
+  
+ .ubah {
+    color: yellow;
+    text-decoration: none;
+ }
+ .ubah:hover {
+    color: black;
+    background-color: yellow;
+ }
+ .hapus {
+    color: red;
+    text-decoration: none;
+ }
+ .hapus:hover {
+    color: #F2EEED;
+    background-color: red;
+ }
+
+ .tambah {
+    text-align: left;
+    text-decoration: none;
+    color: rgb(167, 18, 18);
+    background-color: #038C8C;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 230px;
+    
+ }
+
+ .tambah:hover {
+    color: yellow;
+ }

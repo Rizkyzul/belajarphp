@@ -1,0 +1,3 @@
+kita dapat menambahkan kata kunci use (namespaace) pada sebuah file, agar kita bisa menggunakan kelas, function ataupun konstanta tanpa perlu menyebutan nama namespace-nya
+
+untuk nama kelas, function ataunpun constan yang ganda, dapat diakali dengan menambahkan alis atau nama lain menggunakan kunci as.

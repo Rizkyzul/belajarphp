@@ -1,0 +1,9 @@
+
+
+/*Ecapsulation*/
+//adalah mengelompokan variabel dan function yang berkaitan menjadi sebuah object
+//sebelum membuat object kita harus membuat kelas dahulu sebagai blueprint atau template
+//contoh pada folder class
+
+//setelah membuat class kemudian membuat INSTANTIATE object
+//Instansiate object adalah membuat object dari sebuah class template yang sudah kita buat sebelumnya

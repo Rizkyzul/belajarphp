@@ -1,0 +1,23 @@
+//static
+
+//static adalah kata kunci yang digunakan untuk membuat sebuah variable
+yang berada di luar method property dan class.
+untuk mengakses variable static, kita harus menggunakan kata kunci static. dan tidak perlu instansiasi object.
+didalam method static, kita tidak bisa mengakses variable method atau property yang ada di luar method static atau yang tidak static.
+
+
+contoh static pada php
+
+<?php
+ class MathHelper{
+    public static string $className = 'MathHelper';
+    public static function average(float ...$arguments): float{
+        if(count($arguments)===0)
+        return 0;
+        $total = array_sum($arguments) ;
+        return $total / count($arguments);
+    }
+ }
+
+ echo MathHelper::$className . PHP_EOL;
+ echo MathHelper::average(1,2,3,4,5,6,7,8,9,10) . PHP_EOL;

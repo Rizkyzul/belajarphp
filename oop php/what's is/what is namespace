@@ -1,0 +1,8 @@
+Name space
+
+name space adalah sebuah folder yang berisi sebuah kelas yang berbedan namanya.
+namespace digunakan untuk mengelompokan kode.
+kita bisa menuliskan menggunakan nama yang sama, asal kode berada didalam namespace yang berbedan.
+namespace dapat ditulis untuk kelas ,function ataupun konstanta.
+untuk mengakses kode didalam namespace, maka kiota harus menggunakan kata kunci namespace-nya.
+namespace bersifat nested. nested yaitu bisa menambah namespace didalam namespace.

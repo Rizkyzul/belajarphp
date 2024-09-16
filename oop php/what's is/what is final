@@ -1,0 +1,8 @@
+ yaitu kata kunci bahwa kelas tersebut tidak bisa ditununkan kembali atau sudah final.
+ kata kunci final dapat ditambahkan pada class, untuk me ncegah agar kelas tidak diturunkan.
+ kata kunci final juga dapat kita tambahkan pada method dam cont, u tuk mencegah terjadnya override di kelas anak.
+ 
+ contoh :
+  class Teacher{}
+
+  final class MathTeacher extends Teacher{}

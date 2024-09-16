@@ -1,0 +1,93 @@
+mengatur tingkat aksebilitas dari property, method dan konstanta dalam suatu kelas.
+sessuai dengan konsep encapsulasi dalam pemogrman berbasis objek. dimana kita dapat menyembunyikan rincisn implementasi di dalam objek, dan hanya memberikan aksses terhadap data dan metode yang diperluka keluar objek.
+
+ada 3 tingkatan visibility :
+1. publik : bisa diakses di dalam kelas,turunan kelas dan luar kelas.
+2.protected : bisa diakses didalam kelas dan turunan kelas
+3.privat : hanya bisa diakses di dalam kelas.
+
+
+contoh
+
+
+  class Teacher{ //parent
+   private string $name;
+   private ?string $classroom;
+
+    public function __construct(string $name,string $classroom){
+        $this -> name = $name;
+        $this -> classroom = $classroom;
+    }
+
+    function information(): void{
+        echo "{$this-> name} Mengajar di Kelas {$this->classroom}\n";
+    }
+  }
+
+
+  ////fitur pada constructor promotion //
+
+kita bisa menambahkan kata kunci visibility pada para meter constructor.
+php secara otomatis mengangkat parameter menjadi property.
+sehingga kita sudah tidak perlu mendeklarasikan properti tersebut.
+kita juga tidak perlu menuliskan kode untuk memindahkan nilai parameter ke dalam bentuk property.
+
+
+contoh
+
+class Teacher{ //parent
+public string $name;
+public ?string $classroom;
+
+ public  function __construct(string $name,string $classroom){
+      $this -> name = $name;
+      $this -> classroom = $classroom;
+  }}  yang awalnya gini
+
+
+  menjadi  
+  
+  class Teacher{
+
+   public  function __construct(private/protected/public string $name,private/protected/public string $classroom){
+
+    }
+
+
+
+    /GETTER DAN SETTER/
+
+    untuk mengimplementasikan konsep encapsulasi secara penuh maka semua property mesti diubah secara private.
+    kita membuat method untuk mengakses properti tersebut, yaitu :
+    * metode getter untuk mengambil nilai.
+    * metode setter untuk menyimpan nilai
+
+    metode untuk penamaan getter dasn setter :
+   type data boolean : getter -> isXxx():boolean
+                       setter -> setXxx(bool value)
+   type data lainnya : getter -> getXxx(): tipeData
+                       setter -> setXxx(tipeData value)
+
+contoh :
+          class teacher{
+            private string $name;
+            private string $married;
+
+              public function getName(): string {return $this -> name;}
+              public function setName(string $value ): void {$this -> name = value;}
+
+              public function getMarried(): string {return $this -> married;}
+              public function setMarried(string $value ): void {$this -> married = value}
+          
+          }
+      
+kelebihan :
+~ bisa mengatur agar properti kita menjadi read only atau write only
+(  jika hanya ingin bisa dibaca cukup sediakan getter.
+  jika hanya ingin ditulis cukup sediakan setter. )
+
+~ kita bisa menambahkan kode pada saat membaca atau menulis property
+
+
+kekurangan :
+~ kode yang harus ditulis menjadi lebih banyak.
